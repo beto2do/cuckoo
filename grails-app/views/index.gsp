@@ -7,14 +7,17 @@
     <asset:link rel="icon" href="cuckoo.png" type="image/png" />
 </head>
 <body>
-    <div id="container">
+    <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <h1>Entrada</h1>
+          <h1>Input</h1>
           <input id="clock"/>
+          <div id="spinner" class="spinner" style="display:none;">
+              <g:message code="spinner.alt" default="Loading&hellip;"/>
+          </div>
         </div>
         <div class="col-md-9">
-          <h1>Backlog</h1>
+          <h1>Output</h1>
           <table class="table table-striped">
             <thead>
               <tr>

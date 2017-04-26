@@ -39,10 +39,10 @@ window.CuckooComponent = function (options){
       type: "POST",
       url: config.getOutputUrl,
       dataType: "json",
-      data: date,
+      data: {date:date},
       success: function(sounds){
         var hour = getTwentyFourFormat(date);
-        drawHours({hour:hour,sounds: "TODO coming soon this functionality... :)"});
+        drawHours({hour:hour,sounds: sounds.msg});
       },
       error: function() {
         console.error("server error");
