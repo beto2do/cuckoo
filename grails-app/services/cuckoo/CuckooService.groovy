@@ -27,9 +27,9 @@ class CuckooService {
       }
 
       if(isHalfHour(minutesInt)){
-        message = "cuckoo"
+        message = "Cuckoo"
       }
-      
+
       [msg: message]
     }
 
@@ -52,7 +52,7 @@ class CuckooService {
     def generateCuckoos(hours){
       def message = ""
       (1..hours).each {
-          message += "cuckoo "
+          message += "Cuckoo "
       }
       message
     }
